@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salon Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="bodhi-spa-logo.png" alt="Salon Logo" class="logo-img" />
+      </div>
+      <div class="nav-buttons">
+        <button class="btn"><i class="fas fa-home"></i> Home</button>
+        <button class="btn"><i class="fas fa-user"></i> Profile</button>
+        <button class="btn"><i class="fas fa-question"></i> Help</button>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main class="container">
+      <!-- left column -->
+      <div class="left-column">
+        <div class="form-group flex-container">
+          <label>Select your location</label>
+          <div class="button-group">
+            <button class="btn-location">Providence</button>
+            <button class="btn-location">Newport</button>
+          </div>
+        </div>
+        <div class="form-group flex-container">
+          <label for="service">Select Service</label>
+          <select id="service" class="input">
+            <option>Service list...</option>
+            <option>Body Services</option>
+            <option>Combination</option>
+            <option>Facials</option>
+            <option>Hydrotherapy</option>
+            <option>Massages</option>
+          </select>
+        </div>
+        <div class="form-group flex-container">
+          <label for="guests">Select Number of Guests</label>
+          <select id="guests" class="input">
+            <option>Just me</option>
+            <option>Two guests</option>
+            <option>Two guests (couple) me</option>
+            <option>Three guests</option>
+            <option>Four guests</option>
+          </select>
+        </div>
+        <div class="form-group flex-container">
+          <label for="staff">Staff Preference</label>
+          <select id="staff" class="input">
+            <option>Staff list...</option>
+            <option>Female</option>
+            <option>Male</option>
+            <option>Other Preference</option>
+          </select>
+        </div>
+        <div class="form-group flex-container">
+          <label for="date">Date & Time</label>
+          <div class="input-group">
+            <input type="date" id="date" class="input" />
+            <input type="time" id="time" class="input" />
+          </div>
+        </div>
+        <div class="form-group button-wrapper">
+          <button class="btn-primary">Find Appointment</button>
+        </div>
+      </div>
+      <!-- right column -->
+      <div class="right-column">
+        <h2 class="quick-actions-title">Quick Actions</h2>
+        <button class="btn">View my bookings</button>
+        <button class="btn">Contact the Salon</button>
+        <button class="btn">Change my reservation</button>
+        <button class="btn">More questions</button>
+        <div class="info-box">
+          <h2>Having troubles with the booking?</h2>
+        </div>
+        <p class="tutorial-text">Watch our quick tutorial!</p>
+        <div class="info-box">
+          <h2>More from us</h2>
+        </div>
+        <ul class="info-list">
+          <li>Shop Online</li>
+          <li>Services</li>
+          <li>Specials</li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p>
+        Contact us: The Bodhi Spa LLC, 186 Broadway, Providence, RI 02903, (401)
+        619-4916
+      </p>
+    </footer>
+  </body>
+</html>
